@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://cdn.pixabay.com/photo/2022/11/29/11/30/lake-7624330_1280.jpg') no-repeat center/cover;
+}
+
+.app {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgba(202, 202, 202, 0.5);
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control button {
+    width: 100px;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: rgb(136, 51, 255);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 2px 2px rgba(202, 202, 202, 0.5);
+    border: 1px solid rgb(51, 218, 255);
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@keyframes growup {
+    from {
+        font-size: 16px;
+        width: 80px;
+        height: 45px;
+    }
+    to {
+        font-size: 18px;
+        width: 100px;
+        height: 50px;
+    }
+}
+
+#content {
+    padding: 5px 5px 5px 10px;
+    height: 45px;
+    width: 380px;
+    resize: none; /* Không cho textarea thay đổi size */
+    background: rgba(255, 255, 255, 0.7);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+#content:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgb(51, 218, 255);
+}
+
+#list-task {
+    width: 485px;
+}
+
+#list-task h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px 0;
+    margin: 2px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.delete-all {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.delete-allTask {
+    height: 25px;
+    border: none;
+    outline: none;
+    color: rgb(136, 51, 255);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 2px rgba(202, 202, 202, 0.5);
+    border: 1px solid rgb(51, 218, 255);
+    border-radius: 12px;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#list-task ul {
+    list-style: none;
+    border-bottom: 1px solid rgb(101, 255, 250);
+}
+
+#list-task ul li {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    border-top: 1px solid rgb(101, 255, 250);
+    padding: 10px 5px 8px;
+}
+
+#list-task ul li .task-name {
+    width: 80%;
+}
+
+#list-task ul li a {
+    text-decoration: none;
+    display: block;
+    margin-right: 8px;
+    color: #333;
+    padding: 5px;
+}
+
+#list-task ul li a:nth-of-type(1) {
+    background-color: rgba(151, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+#list-task ul li a:nth-of-type(2) {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
